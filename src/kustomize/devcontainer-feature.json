@@ -1,0 +1,15 @@
+{
+  "name": "Kustomize",
+  "id": "kustomize",
+  "version": "0.1.0",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "Select the version to install."
+    }
+  }
+}

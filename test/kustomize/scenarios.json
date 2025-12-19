@@ -1,0 +1,19 @@
+{
+    "kustomize-image-python": {
+        "image": "mcr.microsoft.com/devcontainers/python:3",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {},
+            "kustomize": {}
+        },
+        "remoteUser": "vscode",
+        "containerUser": "vscode"
+    },
+    "kustomize-image-node": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node",
+        "features": {
+            "kustomize": {}
+        },
+        "remoteUser": "node",
+        "containerUser": "node"
+    }
+}

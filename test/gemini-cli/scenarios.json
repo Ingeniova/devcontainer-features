@@ -1,0 +1,19 @@
+{
+    "gemini-cli-image-python": {
+        "image": "mcr.microsoft.com/devcontainers/python:3",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {},
+            "gemini-cli": {}
+        },
+        "remoteUser": "vscode",
+        "containerUser": "vscode"
+    },
+    "gemini-cli-image-node": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node",
+        "features": {
+            "gemini-cli": {}
+        },
+        "remoteUser": "node",
+        "containerUser": "node"
+    }
+}

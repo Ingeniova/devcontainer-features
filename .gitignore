@@ -1,0 +1,25 @@
+# Log files
+*.log
+
+# Temporary files
+.var/
+*.tmp
+*.bak
+
+# Node dependencies
+node_modules/
+pnpm-debug.log
+.pnpm-store/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

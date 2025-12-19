@@ -1,0 +1,19 @@
+{
+  "name": "@ingeniova/devcontainer-features",
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "clean": "rm -rf output",
+    "clean:all": "pnpm clean && rm -rf node_modules",
+    "up:latest": "pnpm up -iL",
+    "test": "devcontainer features test -i node",
+    "publish:all": "devcontainer features publish -n ingeniova/devcontainer-features src",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "20.2.0",
+    "@commitlint/config-conventional": "20.2.0",
+    "husky": "9.1.7"
+  }
+}

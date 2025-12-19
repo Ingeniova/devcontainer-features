@@ -1,0 +1,19 @@
+{
+    "gcloud-cli-image-python": {
+        "image": "mcr.microsoft.com/devcontainers/python:3",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {},
+            "gcloud-cli": {}
+        },
+        "remoteUser": "vscode",
+        "containerUser": "vscode"
+    },
+    "gcloud-cli-image-node": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node",
+        "features": {
+            "gcloud-cli": {}
+        },
+        "remoteUser": "node",
+        "containerUser": "node"
+    }
+}

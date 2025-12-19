@@ -1,0 +1,22 @@
+{
+  "id": "playwright",
+  "version": "0.1.1",
+  "name": "Playwright",
+  "description": "Installs Playwright browsers and system dependencies for Debian 12/13",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": [
+        "latest"
+      ],
+      "default": "latest",
+      "description": "Select the version of Playwright to use for installing browsers."
+    },
+    "browsers": {
+      "type": "string",
+      "default": "all",
+      "description": "Browsers to install: chromium, firefox, webkit, all, or space-separated combination"
+    }
+  },
+  "installsAfter": ["ghcr.io/devcontainers/features/node"]
+}

@@ -1,0 +1,19 @@
+{
+    "claude-code-image-python": {
+        "image": "mcr.microsoft.com/devcontainers/python:3",
+        "features": {
+            "ghcr.io/devcontainers/features/node:1": {},
+            "claude-code": {}
+        },
+        "remoteUser": "vscode",
+        "containerUser": "vscode"
+    },
+    "claude-code-image-node": {
+        "image": "mcr.microsoft.com/devcontainers/javascript-node",
+        "features": {
+            "claude-code": {}
+        },
+        "remoteUser": "node",
+        "containerUser": "node"
+    }
+}
