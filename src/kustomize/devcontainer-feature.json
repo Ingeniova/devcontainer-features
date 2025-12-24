@@ -2,12 +2,11 @@
   "name": "Kustomize",
   "id": "kustomize",
   "version": "0.1.0",
+  "description": "Installs the Kustomize CLI.",
   "options": {
     "version": {
       "type": "string",
-      "proposals": [
-        "latest"
-      ],
+      "proposals": ["latest"],
       "default": "latest",
       "description": "Select the version to install."
     }

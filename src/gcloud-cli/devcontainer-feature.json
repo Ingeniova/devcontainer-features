@@ -2,5 +2,6 @@
   "name": "GCloud",
   "id": "gcloud-cli",
   "version": "0.1.0",
+  "description": "Installs the Google Cloud CLI (gcloud) and the GKE Auth Plugin.",
   "options": {}
 }

@@ -2,17 +2,14 @@
   "name": "Gemini CLI Feature",
   "id": "gemini-cli",
   "version": "0.1.0",
+  "description": "Installs the Gemini CLI (@google/gemini-cli) globally.",
   "options": {
     "version": {
       "type": "string",
-      "proposals": [
-        "latest"
-      ],
+      "proposals": ["latest"],
       "default": "latest",
       "description": "Select the version to install."
     }
   },
-  "installsAfter": [
-    "ghcr.io/devcontainers/features/node:1"
-  ]
+  "installsAfter": ["ghcr.io/devcontainers/features/node:1"]
 }

@@ -2,17 +2,14 @@
   "name": "Codex Feature",
   "id": "codex",
   "version": "0.1.0",
+  "description": "Installs the OpenAI Codex CLI (@openai/codex).",
   "options": {
     "version": {
       "type": "string",
-      "proposals": [
-        "latest"
-      ],
+      "proposals": ["latest"],
       "default": "latest",
       "description": "Select the version to install."
     }
   },
-  "installsAfter": [
-    "ghcr.io/devcontainers/features/node:1"
-  ]
+  "installsAfter": ["ghcr.io/devcontainers/features/node:1"]
 }
