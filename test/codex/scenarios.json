@@ -1,19 +1,9 @@
 {
-    "codex-image-python": {
-        "image": "mcr.microsoft.com/devcontainers/python:3",
-        "features": {
-            "ghcr.io/devcontainers/features/node:1": {},
-            "codex": {}
-        },
-        "remoteUser": "vscode",
-        "containerUser": "vscode"
+  "node": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "codex": {}
     },
-    "codex-image-node": {
-        "image": "mcr.microsoft.com/devcontainers/javascript-node",
-        "features": {
-            "codex": {}
-        },
-        "remoteUser": "node",
-        "containerUser": "node"
-    }
+    "remoteUser": "node"
+  }
 }

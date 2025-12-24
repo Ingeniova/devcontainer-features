@@ -3,8 +3,10 @@ set -e
 
 source dev-container-features-test-lib
 
+_REMOTE_USER=$(whoami)
+
 check "Playwright version" npx playwright --version
-check "Chromium is installed" ls -d /home/node/.cache/ms-playwright/chromium-*
+check "Chromium is installed" ls -d /home/"$_REMOTE_USER"/.cache/ms-playwright/chromium-*
 
 # Install playwright locally to use it in the node script
 # Skip browser download because the feature should have already handled it
@@ -12,7 +14,7 @@ export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
 npm install playwright
 
 # Create a simple Playwright test script to verify browser launch
-cat <<EOF > test-playwright.js
+cat << EOF > test-playwright.js
 const { chromium } = require('playwright');
 
 (async () => {
@@ -31,5 +33,8 @@ const { chromium } = require('playwright');
 EOF
 
 check "Playwright browser launch" node test-playwright.js
+
+# Cleanup
+rm test-playwright.js
 
 reportResults

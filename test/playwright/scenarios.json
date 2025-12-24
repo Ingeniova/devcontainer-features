@@ -1,11 +1,11 @@
 {
-    "playwright-chromium": {
-        "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-        "features": {
-            "playwright": {
-                "browsers": "chromium"
-            }
-        },
-        "remoteUser": "node"
-    }
+  "node": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "playwright": {
+        "browsers": "chromium"
+      }
+    },
+    "remoteUser": "node"
+  }
 }

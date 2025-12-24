@@ -1,23 +1,11 @@
 {
-    "dotfiles-image-python": {
-        "image": "mcr.microsoft.com/devcontainers/python:3",
-        "features": {
-            "ghcr.io/devcontainers/features/node:1": {},
-            "dotfiles": {
-                "DOTFILES_REPO_URL": "git@github.com:jmcejudo/dotfiles.git"
-            }
-        },
-        "remoteUser": "vscode",
-        "containerUser": "vscode"
+  "node": {
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "features": {
+      "dotfiles": {
+        "DOTFILES_REPO_URL": "https://github.com/jmcejudo/dotfiles.git"
+      }
     },
-    "dotfiles-image-node": {
-        "image": "mcr.microsoft.com/devcontainers/javascript-node",
-        "features": {
-            "dotfiles": {
-                "DOTFILES_REPO_URL": "git@github.com:jmcejudo/dotfiles.git"
-            }
-        },
-        "remoteUser": "node",
-        "containerUser": "node"
-    }
+    "remoteUser": "node"
+  }
 }
