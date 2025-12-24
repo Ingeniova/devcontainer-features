@@ -5,14 +5,14 @@ VERSION=${VERSION:-"latest"}
 USERNAME="${_REMOTE_USER}"
 
 if [ "${VERSION}" = "latest" ]; then
-    PACKAGE="@anthropic-ai/claude-code"
+  PACKAGE="@anthropic-ai/claude-code"
 else
-    PACKAGE="@anthropic-ai/claude-code@${VERSION}"
+  PACKAGE="@anthropic-ai/claude-code@${VERSION}"
 fi
 
 if ! command -v npm > /dev/null 2>&1; then
-    echo "Error: 'npm' not found. Please ensure Node.js is installed (e.g., via 'ghcr.io/devcontainers/features/node:1')."
-    exit 1
+  echo "Error: 'npm' not found. Please ensure Node.js is installed (e.g., via 'ghcr.io/devcontainers/features/node:1')."
+  exit 1
 fi
 
 echo "Installing ${PACKAGE} for user ${USERNAME}..."

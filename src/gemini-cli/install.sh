@@ -5,14 +5,14 @@ VERSION=${VERSION:-"latest"}
 USERNAME="${_REMOTE_USER}"
 
 if [ "${VERSION}" = "latest" ]; then
-    PACKAGE="@google/gemini-cli"
+  PACKAGE="@google/gemini-cli"
 else
-    PACKAGE="@google/gemini-cli@${VERSION}"
+  PACKAGE="@google/gemini-cli@${VERSION}"
 fi
 
 if ! command -v npm > /dev/null 2>&1; then
-    echo "Error: 'npm' not found. Please ensure Node.js is installed (e.g., via 'ghcr.io/devcontainers/features/node:1')."
-    exit 1
+  echo "Error: 'npm' not found. Please ensure Node.js is installed (e.g., via 'ghcr.io/devcontainers/features/node:1')."
+  exit 1
 fi
 
 echo "Installing ${PACKAGE} for user ${USERNAME}..."
