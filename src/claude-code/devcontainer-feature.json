@@ -1,15 +1,17 @@
 {
   "name": "Claude Code Feature",
   "id": "claude-code",
-  "version": "0.1.0",
-  "description": "Installs the Claude Code CLI (@anthropic-ai/claude-code).",
+  "version": "0.2.0",
+  "description": "Installs the Claude Code CLI using native installer.",
   "options": {
     "version": {
       "type": "string",
-      "proposals": ["latest"],
+      "proposals": [
+        "latest",
+        "stable"
+      ],
       "default": "latest",
-      "description": "Select the version to install."
+      "description": "Release channel: latest or stable"
     }
-  },
-  "installsAfter": ["ghcr.io/devcontainers/features/node:1"]
+  }
 }

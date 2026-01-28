@@ -6,7 +6,7 @@ A collection of **Dev Container Features** maintained by Ingeniova to enhance yo
 
 | Feature                                      | Description                                                     |
 | :------------------------------------------- | :-------------------------------------------------------------- |
-| **[claude-code](src/claude-code/README.md)** | Installs `@anthropic-ai/claude-code` CLI.                       |
+| **[claude-code](src/claude-code/README.md)** | Installs the Claude Code CLI using native installer.            |
 | **[codex](src/codex/README.md)**             | Installs `@openai/codex` CLI.                                   |
 | **[dotfiles](src/dotfiles/README.md)**       | Clones and sets up dotfiles from a git repository.              |
 | **[gcloud-cli](src/gcloud-cli/README.md)**   | Installs the Google Cloud SDK and GKE Auth Plugin.              |
