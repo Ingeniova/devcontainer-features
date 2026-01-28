@@ -6,7 +6,7 @@ source dev-container-features-test-lib
 
 _REMOTE_USER=$(whoami)
 
-check "Playwright version" npx playwright --version
+check "Playwright version" npx --yes playwright --version
 check "Chromium is installed" ls -d /home/"$_REMOTE_USER"/.cache/ms-playwright/chromium-*
 
 # Install playwright locally to use it in the node script

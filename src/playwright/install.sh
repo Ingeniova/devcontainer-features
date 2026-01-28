@@ -25,7 +25,7 @@ fi
 # Attempt to install dependencies using Playwright's own tool
 # This is more robust across different Debian/Ubuntu versions
 echo "Running 'npx ${PLAYWRIGHT_PKG} install-deps'..."
-npx "${PLAYWRIGHT_PKG}" install-deps
+npx --yes "${PLAYWRIGHT_PKG}" install-deps
 
 # Clean up apt cache
 apt-get clean
@@ -34,9 +34,9 @@ rm -rf /var/lib/apt/lists/*
 # Install Playwright browsers as the remote user
 echo "Installing Playwright browsers as ${USERNAME}: ${BROWSERS}..."
 if [ "${BROWSERS}" = "all" ]; then
-  su - "${USERNAME}" -c "npx ${PLAYWRIGHT_PKG} install"
+  su - "${USERNAME}" -c "npx --yes ${PLAYWRIGHT_PKG} install"
 else
-  su - "${USERNAME}" -c "npx ${PLAYWRIGHT_PKG} install ${BROWSERS}"
+  su - "${USERNAME}" -c "npx --yes ${PLAYWRIGHT_PKG} install ${BROWSERS}"
 fi
 
 echo "Playwright installed successfully!"
